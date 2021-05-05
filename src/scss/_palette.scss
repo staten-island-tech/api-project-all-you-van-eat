@@ -1,0 +1,10 @@
+$color: (
+    violet-blue: rgba(99, 105, 209, 1),
+    dutch-white: rgba(228, 214, 167, 1),
+    rich-black: rgba(0, 5, 5, 1),
+    fiery-rose: rgba(245, 100, 118, 1),
+    cadet-blue: rgba(80, 162, 167, 1),
+);
+@function color($color-name) {
+  @return map-get($color, $color-name);
+}
