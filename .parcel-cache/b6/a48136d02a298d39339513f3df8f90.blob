@@ -1,0 +1,8 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "DOMSelectors", function () {
+  return DOMSelectors;
+});
+const DOMSelectors = {
+  grid: document.querySelector(".movie-grid")
+};
