@@ -17,8 +17,8 @@ body {
 }
 
 .main-container {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: color(cadet-blue);
   @include flex-column-center;
 }
@@ -36,4 +36,27 @@ body {
   margin: 0rem;
   color: color(dutch-white);
   text-shadow: 0.2rem 0.2rem 0rem black;
+}
+
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90vw;
+  background-color: color(dutch-white);
+  margin: 1rem;
+  padding: 3rem;
+  align-items: center;
+}
+
+.menu-picture {
+  height: 65vh;
+  width: 20vw;
+  margin: 0 auto;
+  position: relative;
+  margin: 2rem auto;
+}
+
+.picture {
+  width: 100%;
 }
