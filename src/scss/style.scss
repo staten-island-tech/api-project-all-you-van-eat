@@ -20,18 +20,15 @@ body {
   background-color: color(cadet-blue);
   width: 100vw;
   height: 100vh;
+  @include flex-column-center;
+  justify-content: center;
 }
 
 .main-head {
   color: white;
   border: 0rem;
   font-size: 8rem;
-  @include flex-row-center;
-  align-items: center;
-  justify-content: center;
-  padding-top: 10rem;
   text-transform: uppercase;
-  margin-top: 0;
   font-weight: bold;
 }
 .main-h1 {
