@@ -41,20 +41,23 @@ body {
 .menu-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100vw;
   background-color: color(dutch-white);
   margin: 2rem;
-  padding: 2rem;
   align-items: center;
 }
 
-.menu-picture {
+.food-name {
+  font-size: 1rem;
+  color: color(fiery-rose);
+  text-shadow: 0.2rem 0.2rem 0rem black;
+}
+
+.food-picture {
   width: 20vw;
   height: 20vw;
-  margin: 0 auto;
   position: relative;
-  margin: 2rem auto;
   background-color: yellow;
 }
 
