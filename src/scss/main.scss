@@ -1,0 +1,67 @@
+@import "_mixins.scss";
+
+@import "_palette.scss";
+
+$font-main: "Varela", sans-serif;
+$font-second: "Josefin Slab", serif;
+$font-bold: "Montserrat", sans-serif;
+
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  font-family: $font-main;
+  font-weight: 500;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: color(cadet-blue);
+  @include flex-column-center;
+}
+
+.main-text {
+  font-size: 10rem;
+  margin: 0rem;
+  padding: 2rem;
+  color: color(fiery-rose);
+  text-shadow: 0.2rem 0.2rem 0rem black;
+}
+
+.sub-text {
+  font-size: 5rem;
+  margin: 0rem;
+  color: color(dutch-white);
+  text-shadow: 0.2rem 0.2rem 0rem black;
+}
+
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100vw;
+  background-color: color(dutch-white);
+  margin: 2rem;
+  align-items: center;
+}
+
+.food-name {
+  font-size: 1rem;
+  color: color(fiery-rose);
+  text-shadow: 0.2rem 0.2rem 0rem black;
+}
+
+.food-picture {
+  width: 20vw;
+  height: 20vw;
+  position: relative;
+  background-color: yellow;
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
+}

@@ -12,10 +12,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.26.9"
   },
   "browserslist": [
     "since 2017-06"
-  ]
+  ],
+  "dependencies": {}
 }

@@ -1,117 +1,92 @@
-$font-main: "Asap", sans-serif;
+@import "_mixins.scss";
+
+@import "_palette.scss";
+
+$font-main: "Arvo", serif;
 $font-second: "Josefin Slab", serif;
+$font-bold: "Montserrat", sans-serif;
+
 html,
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-size: 62.5%;
-  color: white;
-  font-family: $font-second;
+  font-family: $font-bold;
   font-weight: 500;
 }
-body {
-  background-color: #111;
+
+.main-box {
+  background-color: color(cadet-blue);
+  width: 100vw;
+  height: 100vh;
+  @include flex-column-center;
+  justify-content: center;
 }
 
-.header {
-  font-size: 5.2rem;
-
-  margin: 3rem auto;
-  text-align: center;
+.main-head {
+  color: white;
+  border: 0rem;
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-.top-rated {
-  margin: 1rem auto 2rem auto;
-  text-align: center;
-  font-size: 3.8rem;
-}
-.movie-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 90vw;
-  background-color: white;
-  margin: 1rem auto;
-  padding: 3rem auto;
+.main-h1 {
+  color: color(rich-black);
+  font-size: 5rem;
+  @include flex-row-center;
   align-items: center;
+  justify-content: center;
 }
-.movie-card {
-  height: 65vh;
-  width: 20vw;
-  margin: 0 auto;
-  position: relative;
-  margin: 2rem auto;
-}
-.movie-card-front {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  /* background-image: url("https://image.tmdb.org/t/p/w300/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg"); */
-  background-position: center;
-  z-index: 3;
-  transition: all 0.3s;
-}
-.poster {
-  width: 100%;
-  height: 100%;
-}
-.movie-card-back {
-  transition: all 0.3s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
 
-  display: none;
+.container {
+  width: 70vw;
+  padding: 1rem;
+  margin: 2rem auto;
+  font-size: 4rem;
+  text-align: center;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  position: relative;
+  padding: 1.5rem;
+  font-size: 8rem;
+  border-radius: 5rem;
+  transition: all 0.3s;
   color: white;
-  background-color: rgba(33, 33, 33, 0.8);
-  width: 100%;
+  background-color: color(violet-blue);
+  border: solid 0.5rem white;
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.4);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
   height: 100%;
-}
-.movie-card-header {
-  font-size: 2.4rem;
-  text-transform: uppercase;
-  margin: 1rem auto;
-
-  text-align: center;
-}
-.score-box,
-.release-box {
-  text-align: center;
-}
-
-.movie-genres {
-  font-size: 1.6rem;
-  padding: 1rem 2rem;
-  display: flex;
   width: 100%;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.movie-genre {
-  list-style: none;
-}
-.user-score {
-  font-size: 2rem;
-}
-.release-date {
-  font-size: 2rem;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s;
 }
 
-.movie-card:hover .movie-card-front {
-  z-index: 1;
+.btn:hover::after {
+  transform: scaleX(1.5), scaleY(1.6);
+  opacity: 0;
 }
-.movie-card:hover .movie-card-back {
-  z-index: 3;
-  display: flex;
-}
-.test {
-  color: black;
-  font-size: 3rem;
+
+.btn:active {
+  transform: translateY(-1px);
 }
