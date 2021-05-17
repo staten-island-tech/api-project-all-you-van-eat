@@ -42,21 +42,23 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 90vw;
+  width: 100vw;
   background-color: color(dutch-white);
-  margin: 1rem;
-  padding: 3rem;
+  margin: 2rem;
+  padding: 2rem;
   align-items: center;
 }
 
 .menu-picture {
-  height: 65vh;
   width: 20vw;
+  height: 20vw;
   margin: 0 auto;
   position: relative;
   margin: 2rem auto;
+  background-color: yellow;
 }
 
 .picture {
   width: 100%;
+  height: 100%;
 }

@@ -15,7 +15,7 @@ const query = async function () {
         "beforeend",
         `<section class="menu-grid">
             <div class="menu-picture">
-                <img src="https://images.spoonacular.com/file/wximages/${recipe.id}-90x90.${recipe.imageType}" alt="" class="picture">
+                <img src="https://images.spoonacular.com/file/wximages/${recipe.id}-312x231.${recipe.imageType}" alt="" class="picture">
             </div>
         </section>
         `
