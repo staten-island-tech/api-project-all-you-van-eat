@@ -14,11 +14,12 @@ body {
   font-size: 62.5%;
   font-family: $font-main;
   font-weight: 500;
+  background-color: color(cadet-blue);
 }
 
 .main-container {
   width: 100vw;
-  height: 100vh;
+  height: 35vh;
   background-color: color(cadet-blue);
   @include flex-column-center;
 }
@@ -42,9 +43,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 100vw;
+  width: 90vw;
   background-color: color(dutch-white);
-  margin: 2rem;
   align-items: center;
 }
 
@@ -57,7 +57,6 @@ body {
 .food-picture {
   width: 20vw;
   height: 20vw;
-  position: relative;
   background-color: yellow;
 }
 
