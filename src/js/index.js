@@ -19,7 +19,7 @@ gamestart = () => {
 
 ImageChange = () => {
   document.getElementByClass("gameimg-1").style.backgroundImage =
-    "url(https://api.spoonacular.com/recipes/findByNutrients)";
+    "url(https://api.spoonacular.com/recipes/findByNutrients?apiKey=da719eac9fa8411596f068053ad6f32a&number=1&minCarbs=10&offset=)";
 };
 
 Endgame = () => {
