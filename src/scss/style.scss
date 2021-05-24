@@ -25,9 +25,10 @@ body {
 }
 
 .main-head {
+  text-align: center;
   color: white;
   border: 0rem;
-  font-size: 8rem;
+  font-size: 12rem;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -56,13 +57,15 @@ body {
 .btn:visited {
   text-decoration: none;
   position: relative;
-  padding: 1.5rem;
-  font-size: 8rem;
-  border-radius: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  font-size: 4rem;
+  border-radius: 1rem;
   transition: all 0.3s;
-  color: white;
-  background-color: color(violet-blue);
-  border: solid 0.5rem white;
+  color: color(cadet-blue);
+  background-color: white;
 }
 
 .btn:hover {
