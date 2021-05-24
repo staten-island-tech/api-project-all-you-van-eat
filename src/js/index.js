@@ -1,35 +1,36 @@
 import { DOMSelectors } from "./DOM";
 import { genres } from "./genre";
 
-//const key = "b9b841dbb44044dd9d0d26c2b377cec6";
+const imagename1 = document.querySelector("#gameimg-1-text");
+const imagename2 = document.querySelector("#gameimg-2-text");
 
-const query = async function () {
-  try {
-    const response = await fetch(
-      `https://api.spoonacular.com/food/menuItems/search?query=All&number=60&apiKey=b9b841dbb44044dd9d0d26c2b377cec6`
-    );
-    const data = await response.json();
-    console.log(data.menuItems);
-    data.menuItems.forEach((recipe) => {
-      DOMSelectors.grid.insertAdjacentHTML(
-        "beforeend",
-        `<div class="food-card">
-        <div class="food-card-front">
-                    <img src="${recipe.image}" alt="" class="picture"/>
-                </div>
+const score = 0;
+const questioncounter = 0;
+const questioncorrect = true;
+// const imageim1 = (document.getElementByClass("gameimg-1").style.backgroundImage = "url(images/img.jpg)");
 
-            <div class="food-card-back">
-                <h3 class="food-title">${recipe.title}</h3>
-                <div class="chain-container">
-                    <p class="restaurant-chain">Restaurant Chain:</p>
-                    <p class="restaurant-chain">${recipe.restaurantChain}</p>
-                </div>
-            </div>
-        </div>   
-        `
-      );
-    });
-  } catch (error) {}
+const key = "da719eac9fa8411596f068053ad6f32a";
+
+gamestart = () => {
+  questionCounter = 0;
+  score = 0;
+  ImageChange();
 };
 
-query();
+ImageChange = () => {
+  document.getElementByClass("gameimg-1").style.backgroundImage =
+    "url(https://api.spoonacular.com/recipes/findByNutrients)";
+};
+
+Endgame = () => {
+  if (questioncorrect != true) {
+    const quitorna = window.confirm(
+      "Congrats, your score is: " + score + "\n\nWould you like to restart?"
+    );
+    if (quitorna == true) {
+      window.location.reload();
+    } else {
+      window.location.assign("index.html");
+    }
+  }
+};
