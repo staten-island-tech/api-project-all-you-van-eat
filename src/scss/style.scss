@@ -17,7 +17,7 @@ body {
 }
 
 .main-box {
-  background-color: color(cadet-blue);
+  background-color: #77ddaa;
   width: 100vw;
   height: 100vh;
   @include flex-column-center;
@@ -31,6 +31,7 @@ body {
   font-size: 12rem;
   text-transform: uppercase;
   font-weight: bold;
+  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 .main-h1 {
   color: color(rich-black);
@@ -64,8 +65,10 @@ body {
   font-size: 4rem;
   border-radius: 1rem;
   transition: all 0.3s;
-  color: color(cadet-blue);
+  color: #77ddaa;
   background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .btn:hover {
