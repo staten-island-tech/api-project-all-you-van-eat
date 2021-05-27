@@ -22,8 +22,8 @@ body {
   font-size: 10rem;
   margin: 0rem;
   padding: 2rem;
-  color: color(fiery-rose);
-  text-shadow: 0.2rem 0.2rem 0rem black;
+  color: black;
+  text-shadow: 4px 3px 0px #d3d3d3, 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
 .sub-text {
@@ -31,8 +31,8 @@ body {
   text-align: center;
   font-size: 5rem;
   margin: 0rem;
-  color: #ffc0cb;
-  text-shadow: 0rem 0.2rem 0.2rem black;
+  color: black;
+  text-shadow: 0rem 0.2rem 0.2rem white;
 }
 
 .menu-grid {
@@ -160,7 +160,7 @@ body {
   position: absolute;
   width: 6rem;
   height: 6rem;
-  background: color(fiery-rose);
+  background: #037d50;
   opacity: 1;
   top: -0.4rem;
   left: -0.4rem;
