@@ -5,20 +5,22 @@ const imagename1 = document.querySelector("#gameimg-1-text");
 const imagename2 = document.querySelector("#gameimg-2-text");
 
 const score = 0;
-const questioncounter = 0;
+let questionCounter = 0;
 const questioncorrect = true;
 // const imageim1 = (document.getElementByClass("gameimg-1").style.backgroundImage = "url(images/img.jpg)");
 
 const key = "da719eac9fa8411596f068053ad6f32a";
 
-document.getElementById("imagenum1").style.backgroundImage =
-  "url(https://api.spoonacular.com/recipes/findByNutrients?apiKey=da719eac9fa8411596f068053ad6f32a&number=1&minCarbs=10&offset=4)";
-
-/* gamestart = () => {
+function gamestart (
   questionCounter = 0;
   score = 0;
-  ImageChange();
-};
+  const response = fetch(
+    "https://api.spoonacular.com/recipes/findByNutrients?apiKey=da719eac9fa8411596f068053ad6f32a&number=1&minCarbs=10&offset=3"
+  );
+  const data = response.json();
+  console.log(data);
+  //ImageChange();
+);
 
 ImageChange = () => {
   document.getElementByClass("gameimg-1").style.backgroundImage =
@@ -37,4 +39,5 @@ Endgame = () => {
     }
   }
 };
- */
+
+gamestart();
