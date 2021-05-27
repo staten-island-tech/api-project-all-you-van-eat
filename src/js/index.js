@@ -11,7 +11,10 @@ const questioncorrect = true;
 
 const key = "da719eac9fa8411596f068053ad6f32a";
 
-gamestart = () => {
+document.getElementById("imagenum1").style.backgroundImage =
+  "url(https://api.spoonacular.com/recipes/findByNutrients?apiKey=da719eac9fa8411596f068053ad6f32a&number=1&minCarbs=10&offset=4)";
+
+/* gamestart = () => {
   questionCounter = 0;
   score = 0;
   ImageChange();
@@ -19,7 +22,7 @@ gamestart = () => {
 
 ImageChange = () => {
   document.getElementByClass("gameimg-1").style.backgroundImage =
-    "url(https://api.spoonacular.com/recipes/findByNutrients?apiKey=da719eac9fa8411596f068053ad6f32a&number=1&minCarbs=10&offset=)";
+    "url(https://api.spoonacular.com/recipes/findByNutrients?apiKey=da719eac9fa8411596f068053ad6f32a&number=1&minCarbs=10&offset=3)";
 };
 
 Endgame = () => {
@@ -34,3 +37,4 @@ Endgame = () => {
     }
   }
 };
+ */
