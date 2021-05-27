@@ -13,6 +13,7 @@ const query = async function () {
       DOMSelectors.grid.insertAdjacentHTML(
         "beforeend",
         `<div class="food-card">
+        <div class="food-card-inner">
         <div class="food-card-front">
                     <img src="${recipe.image}" alt="" class="picture"/>
                 </div>
@@ -24,6 +25,7 @@ const query = async function () {
                     <p class="restaurant-chain">${recipe.restaurantChain}</p>
                 </div>
             </div>
+        </div>
         </div>   
         `
       );
