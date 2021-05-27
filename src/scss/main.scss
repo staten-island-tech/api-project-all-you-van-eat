@@ -32,7 +32,7 @@ body {
   text-align: center;
   font-size: 5rem;
   margin: 0rem;
-  color: #3d3d3d;
+  color: black;
   text-shadow: 0rem 0.2rem 0.2rem white;
 }
 
@@ -68,7 +68,6 @@ body {
   background-position: center;
   z-index: 1;
   transition: all 0.5s;
-  border: solid 0.5rem color;
 }
 
 .picture {
@@ -110,4 +109,114 @@ body {
 .restaurant-chain {
   text-align: center;
   font-size: 1.5rem;
+}
+
+.search-bar-floater {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  transition: all ease-in-out 0.3s;
+  transform: translate(-50%, -50%);
+}
+
+.search-anchor {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.search-submit {
+  opacity: 0;
+  width: 0;
+}
+.search-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: none;
+  border: none;
+  background: #fff;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2.5rem;
+  opacity: 0;
+  z-index: 5;
+  transition: all 0.3;
+  font-size: 2rem;
+}
+.search-bar:hover {
+  cursor: pointer;
+}
+.search-bar:focus {
+  width: 20rem;
+  left: auto;
+  opacity: 1;
+  cursor: text;
+  transition: all 0.3;
+  padding-left: 2.5rem;
+  padding-right: 7rem;
+}
+.search-toggler {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  background: #037d50;
+  opacity: 1;
+  top: -0.4rem;
+  left: -0.4rem;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+.search-toggler:hover {
+  cursor: pointer;
+}
+.search-toggler::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 2.2rem;
+  right: 0;
+  bottom: 0;
+  left: 2.2rem;
+  width: 1.2rem;
+  height: 0.2rem;
+  background: #fff;
+  transform: rotate(45deg);
+  transition: all 0.2s;
+}
+.search-toggler::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: -0.5rem;
+  right: 0;
+  bottom: 0;
+  left: -0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 0.2rem solid #fff;
+  transition: all 0.3s;
+}
+.search-bar:focus ~ .search-toggler {
+  right: 40rem;
+  background: #151515;
+  z-index: 6;
+  transition: all 0.3;
+}
+.search-bar:focus ~ .search-toggler::before {
+  top: 0;
+  left: 0;
+  width: 3rem;
+}
+.search-bar:focus ~ .search-toggler::after {
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 2px;
+  border: none;
+  background: white;
+  border-radius: 0%;
+  transform: rotate(-45deg);
 }
