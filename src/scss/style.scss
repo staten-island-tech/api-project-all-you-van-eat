@@ -107,3 +107,16 @@ body {
     font-size: 3rem;
   }
 }
+
+@media only screen and (min-width: 0px) and (max-width: 520px) {
+  body {
+    width: 100%;
+  }
+  .main-head {
+    font-size: 4rem;
+  }
+  .main-h1 {
+    width: 60vw;
+    font-size: 2rem;
+  }
+}

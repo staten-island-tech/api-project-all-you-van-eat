@@ -147,4 +147,28 @@ body {
     width: 62vw;
     height: 30vh;
   }
+  .search-header-link {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 370px) {
+  .food-card {
+    width: 70vw;
+    height: 20vh;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 999px) {
+  .food-card {
+    width: 30vw;
+    height: 20vh;
+    padding: 2px;
+  }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1300px) {
+  .food-card {
+    width: 20vw;
+    height: 25vh;
+  }
 }
