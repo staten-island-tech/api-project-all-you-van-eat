@@ -31,7 +31,6 @@ const query = async function () {
       );
     });
   } catch (error) {}
-  listen();
 };
 
 query();
