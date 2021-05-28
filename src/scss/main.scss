@@ -1,15 +1,12 @@
-
 @use "_search.scss";
 
 @import "_mixins.scss";
 
 @import "_palette.scss";
 
-
 $font-main: "Varela", serif;
 $font-second: "Josefin Slab", serif;
 $font-bold: "Montserrat", sans-serif;
-
 
 html,
 body {
@@ -23,11 +20,10 @@ body {
   @include flex-column-center;
 }
 
-.search-header-link{
+.search-header-link {
   font-size: 3rem;
   color: black;
 }
-
 
 .main-text {
   text-align: center;
@@ -136,4 +132,3 @@ body {
   text-align: center;
   font-size: 1.5rem;
 }
-
