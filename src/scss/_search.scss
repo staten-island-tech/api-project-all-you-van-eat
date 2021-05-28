@@ -33,9 +33,17 @@
   padding-top: 1rem;
 }
 .submit-button {
-  font-size: 10rem;
+  font-size: 3.5rem;
+  padding: 1rem;
+  border-radius: 3rem;
+  font-family: "Times New Roman", Times, serif;
+  border-color: cadetblue;
 }
 
+.submit-button:hover {
+  transform: translate(3px, 3px);
+  cursor: crosshair;
+}
 .menu-grid {
   border-radius: 2rem;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
@@ -124,4 +132,11 @@
 .restaurant-chain {
   text-align: center;
   font-size: 1.5rem;
+}
+
+.go-back {
+  font-size: 2rem;
+  @include flex-column-center;
+  padding: 5rem;
+  flex-direction: reverse;
 }
