@@ -1,18 +1,12 @@
-
 @import "_mixins.scss";
 
 @import "_palette.scss";
-
-
-
-
 
 .search-header {
   font-size: 4rem;
   margin: 2rem auto 3rem auto;
   text-align: center;
 }
-
 
 .search-header-link,
 .search-header-link:visited,
@@ -41,7 +35,6 @@
 .submit-button {
   font-size: 2rem;
 }
-
 
 .menu-grid {
   border-radius: 2rem;
@@ -132,5 +125,3 @@
   text-align: center;
   font-size: 1.5rem;
 }
-
-
