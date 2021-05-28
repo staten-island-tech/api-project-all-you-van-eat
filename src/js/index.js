@@ -15,7 +15,7 @@ const query = async function () {
         `<div class="food-card">
         <div class="food-card-inner">
         <div class="food-card-front">
-                    <img src="${recipe.image}" alt="" class="picture"/>
+                    <img src="${recipe.image}" alt="${recipe.title}" class="picture"/>
                 </div>
 
             <div class="food-card-back">
