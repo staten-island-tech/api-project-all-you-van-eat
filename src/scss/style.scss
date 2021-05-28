@@ -2,7 +2,6 @@
 
 @import "_palette.scss";
 
-
 $font-main: "Arvo", serif;
 $font-second: "Josefin Slab", serif;
 $font-bold: "Montserrat", sans-serif;
@@ -96,4 +95,15 @@ body {
 
 .btn:active {
   transform: translateY(-1px);
+}
+
+@media screen and (max-width: 1000px) {
+  .main-head {
+    width: 80vw;
+    font-size: 8rem;
+  }
+  .main-h1 {
+    width: 80vw;
+    font-size: 3rem;
+  }
 }

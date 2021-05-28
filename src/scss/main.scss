@@ -132,3 +132,19 @@ body {
   text-align: center;
   font-size: 1.5rem;
 }
+
+@media screen and (max-width: 1000px) {
+  .main-text {
+    font-size: 6rem;
+  }
+  .sub-text {
+    font-size: 3rem;
+  }
+  .menu-grid {
+    width: 90%;
+  }
+  .food-card {
+    width: 62vw;
+    height: 30vh;
+  }
+}
