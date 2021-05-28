@@ -1,6 +1,9 @@
+
 @import "_mixins.scss";
 
 @import "_palette.scss";
+
+
 
 
 
@@ -32,6 +35,8 @@
   height: 10vh;
   font-size: 2rem;
   margin: 3rem auto;
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 .submit-button {
   font-size: 2rem;
