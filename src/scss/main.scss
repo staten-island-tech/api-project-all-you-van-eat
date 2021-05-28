@@ -2,6 +2,7 @@
 
 @import "_palette.scss";
 
+
 $font-main: "Varela", sans-serif;
 $font-second: "Josefin Slab", serif;
 $font-bold: "Montserrat", sans-serif;
@@ -132,6 +133,7 @@ body {
   right: 50px;
   transition: all ease-in-out 0.3s;
   transform: translate(-50%, -50%);
+  z-index: 100;
 }
 
 .search-anchor {
@@ -142,6 +144,7 @@ body {
 .search-submit {
   opacity: 0;
   width: 0;
+
 }
 .search-bar {
   position: absolute;

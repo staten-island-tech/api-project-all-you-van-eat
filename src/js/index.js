@@ -35,8 +35,9 @@ const query = async function () {
 };
 
 const listen = function () {
-  DOMSelectors.searchform.addEventListener("submit", function (e) {
+  DOMSelectors.searchform.addEventListener("keyup", function (e) {
     e.preventDefault();
+    e.location.href();
     const quarry = DOMSelectors.SearchArea.value;
     const searchQuery = async function () {
       try {
@@ -64,9 +65,13 @@ const listen = function () {
             `
           );
         });
-      } catch (error) {}
+      } catch (error) {
+        console.log(error);
+        alert("Hey something went wrong");
+      }
       searchQuery();
     };
   });
 };
 query();
+listen();
